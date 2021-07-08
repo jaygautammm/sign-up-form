@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        *{
+            font-family: 'Baloo Bhai 2', cursive;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            /* background-image: url("https://source.unsplash.com/user/erondu/1600x900"); */
+            background-image: url(https://source.unsplash.com/user/erondu/1600x900);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: 280%;
+            background-position: -400px 0px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        div.main{
+            width: 400px;
+            margin: 100px auto 0px auto;
+        }
+        h2{
+            font-family: 'Baloo Bhai 2', cursive;
+            text-align: center;
+            padding: 20px;
+            font-family: sans-serif;
+
+        }
+        div.register{
+            background-color: rgb(126, 184, 59);
+            width: 100%;
+            font-size: 18px;
+            border-radius: 10px;
+            border: 1px solid rgb(red, green, blue);
+            box-shadow: 2px  2px 15px ;
+            color: #fff;
+            z-index: 1;
+            opacity: 0.7;
+        }
+        form#register{
+            margin: 40px;
+        }
+        label{
+            font-family: sans-serif;
+            font-size: 18px;
+            font-style: italic;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        input.name{
+            font-family: 'Baloo Bhai 2', cursive;
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            /* outline: 0; */
+            padding: 7px;
+            margin: 3px 5px;
+            background-color: #fff;
+            box-shadow: inset 1px 1px 5px rgba(0,0,0, 0.3)
+        }
+        input#submit{
+            width: 200px;
+            padding: 7px;
+            margin: 2px 5px;
+            font-size: 16px;
+            font-family: sans-serif;
+            font-weight: 600;
+            border: none;
+            border-radius: 3px;
+            background-color: black;
+            color: white;
+            border: 1px solid rgba(250,255,255, 0.8);
+            box-shadow:  1px 1px 5px rgba(0,0,0, 0.3);
+            margin-bottom: 20px;
+            cursor: pointer;
+            border-radius: 8px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        input#submit:hover{
+            background: rgba(255, 255, 255, 0.767);
+            color: black;
+        }
+        label,span,h2{
+            text-shadow:1px 1px 5px rgba(0,0,0, 0.3) ;
+
+        }
+        .reset{
+            border: 1px solid rgba(250,255,255, 0.8);
+            margin: 2px 12px;
+            padding: 7px;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color:black;
+            color: white;
+        }
+        .reset:hover{
+            background: rgba(255, 255, 255, 0.774);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="register">
+            <h2>Register Here</h2>
+            <form id="register" method="post">
+                <label for="fname" >First Name :</label>
+                <br>
+                <input type="text" name="fname" class="name" id="fname" placeholder="Enter Your First Name">
+                <br><br>
+                <label for="lname" >Last Name :</label>
+                <br>
+                <input type="text" name="lname" class="name" id="lname" placeholder="Enter Your Last Name">
+                <br><br>
+                <label for="Aname" >Your Age:</label>
+                <br>
+                <input type="number" name="Age" class="name" id="Aname" placeholder="How old are You?">
+                <br><br>
+                <label for="Ename" >Email :</label>
+                <br>
+                <input type="email" name="email" class="name" id="Ename" placeholder="Enter Your Vaild Email">
+                <br><br>
+                <label>Gender :</label>
+                <br>
+                &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" id="male">
+                &nbsp;
+                <span id="male"> Male </span>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" id="Female">
+                <span id="female">Female</span>
+                
+                <br><br>
+                <label>known language :</label>
+                <br>
+                &nbsp;&nbsp;&nbsp;
+                <input type="checkbox" name="language" id="hindi">
+                &nbsp;
+                <span id="hindi">hindi</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" name="language" id="english">
+                <span id="english">english</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" name="language" id="urdu">
+                <span id="urdu">urdu</span>
+                <br><br>
+                
+                <input type="submit" value="submit" name="submit" id="submit">
+                <input type="reset" class="reset">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
